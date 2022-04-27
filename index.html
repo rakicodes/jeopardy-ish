@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Jeopardy</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Jeopardy-ish!</h1>
+		<h3>Score</h3>
+		<p id="score">0</p>
+		<h3>High Score</h3>
+		<p id="highscore"></p>
+
+		<table>
+			<thead>
+				<tr>
+					<td>Anime</td>
+					<td>Cartoons</td>
+					<td>Books</td>
+					<td>Film</td>
+					<td>TV Shows</td>
+					<td>Video Games</td>	
+				</tr>
+			</thead>
+			<tr>
+				<td id="anime-0">200</td>
+				<td id="cartoons-0">200</td>
+				<td id="books-0">200</td>
+				<td id="film-0">200</td>
+				<td id="tv-0">200</td>
+				<td id="games-0">200</td>
+			</tr>
+			<tr>
+				<td id="anime-1">400</td>
+				<td id="cartoons-1">400</td>
+				<td id="books-1">400</td>
+				<td id="film-1">400</td>
+				<td id="tv-1">400</td>
+				<td id="games-1">400</td>
+			</tr>
+			<tr>
+				<td id="anime-2">600</td>
+				<td id="cartoons-2">600</td>
+				<td id="books-2">600</td>
+				<td id="film-2">600</td>
+				<td id="tv-2">600</td>
+				<td id="games-2">600</td>
+			</tr>
+			<tr>
+				<td id="anime-3">800</td>
+				<td id="cartoons-3">800</td>
+				<td id="books-3">800</td>
+				<td id="film-3">800</td>
+				<td id="tv-3">800</td>
+				<td id="games-3">800</td>
+			</tr>
+			<tr>
+				<td id="anime-4">1000</td>
+				<td id="cartoons-4">1000</td>
+				<td id="books-4">1000</td>
+				<td id="film-4">1000</td>
+				<td id="tv-4">1000</td>
+				<td id="games-4">1000</td>
+			</tr>
+		</table>
+
+		<section id="qna" class="qna-container container hidden">
+			<h2 id="question"></h2>
+			<section id="answer"></section>
+			<button type="submit">Submit</button>
+		</section>
+
+		<section class="container game-over hidden">
+			<h3>Game Over</h3>
+			<h3 id="final-score"></h3>
+			<button class="play-button">Play Again?</button>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
