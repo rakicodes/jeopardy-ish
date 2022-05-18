@@ -5,6 +5,7 @@ function MakeGame(token) {
     this.selectedQs = "";
     this.answered = 0;
     this.selectedPts = 0;
+    this.totalQs = 30;
     this.questions = {
         31: [],
         32: [],
@@ -164,7 +165,7 @@ function MakeGame(token) {
         document.querySelector('#score').innerText = this.score;
         this.answered++;
         
-        if (this.answered === 5) {
+        if (this.answered === 30) {
             this.gameOver();
         }
 
